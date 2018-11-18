@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,md}": ["eslint --fix src", "git add"]
   },
   "keywords": [],
   "author": "",
@@ -16,7 +20,13 @@
     "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.8.0",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.15.2"
   },
   "dependencies": {
     "@babel/core": "^7.1.6",
