@@ -26,6 +26,8 @@ A boilerplate project to get up and running building a UI library using:
 - [styled-components](https://www.styled-components.com/)
 
 ### Todo
-- [ ] Add eslint
-- [ ] Add prettier
-- [ ] Add precommit hook
+- [x] Add eslint
+- [x] Add prettier
+- [x] Add precommit hook
+- [ ] Add test task
+- [ ] Add test task to precommit hook
