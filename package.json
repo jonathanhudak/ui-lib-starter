@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "keywords": [],
   "author": "",
