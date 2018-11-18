@@ -1,0 +1,27 @@
+{
+  "name": "anni-ui-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 9001 -c .storybook",
+    "deploy-storybook": "storybook-to-ghpages",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/react": "^4.0.7",
+    "@storybook/storybook-deployer": "^2.3.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-styled-components": "^1.8.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.1"
+  }
+}
