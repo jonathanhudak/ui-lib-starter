@@ -31,4 +31,5 @@ A boilerplate project to get up and running building a UI library using:
 - [x] Add precommit hook
 - [x] Add test task
 - [x] Add test task to precommit hook
+- [ ] Add module bundling for whole library and individual components
 - [?](https://github.com/jonathanhudak/react-storybook-styled-components-gh-pages/issues)
