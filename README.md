@@ -29,5 +29,6 @@ A boilerplate project to get up and running building a UI library using:
 - [x] Add eslint
 - [x] Add prettier
 - [x] Add precommit hook
-- [ ] Add test task
-- [ ] Add test task to precommit hook
+- [x] Add test task
+- [x] Add test task to precommit hook
+- [?](https://github.com/jonathanhudak/react-storybook-styled-components-gh-pages/issues)
