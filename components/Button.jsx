@@ -5,12 +5,13 @@ const settings = { a: 1, b: 2 };
 
 const Button = styled.button `
 	background: ${ (props) => (props.primary
-  ? 'palevioletred'
+  ? 'limegreen'
   : 'white')};
 	color: ${ (props) => (props.primary
   ? 'white'
-  : 'palevioletred')};
+  : 'limegreen')};
 
+	box-sizing: border-box;
 	font-size: 1em;
 	margin: 1em;
 	padding: 0.25em 1em;
