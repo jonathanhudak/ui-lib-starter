@@ -32,4 +32,5 @@ A boilerplate project to get up and running building a UI library using:
 - [x] Add test task
 - [x] Add test task to precommit hook
 - [ ] Add module bundling for whole library and individual components
+- [ ] Add [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
 - [?](https://github.com/jonathanhudak/react-storybook-styled-components-gh-pages/issues)
