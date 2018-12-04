@@ -1,10 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var styled = _interopDefault(require('styled-components'));
+import styled from 'styled-components';
 
 var PRIMARY_COLOR = 'limegreen';
 var Button = styled.button.withConfig({
@@ -16,4 +10,4 @@ var Button = styled.button.withConfig({
   return props.primary ? 'white' : PRIMARY_COLOR;
 }, PRIMARY_COLOR);
 
-exports.Button = Button;
+export { Button };
