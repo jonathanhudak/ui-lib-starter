@@ -1,6 +1,6 @@
 # UI Library Setup
 
-[View this project's storybook](https://jonathanhudak.github.io/react-storybook-styled-components-gh-pages)
+[View this project's storybook](https://jonathanhudak.com/ui-lib-starter/)
 
 A boilerplate project to get up and running building a UI library using:
 - React
