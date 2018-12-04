@@ -2,6 +2,7 @@ import jsx from 'rollup-plugin-jsx';
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import * as index from './src/index';
+import { uglify } from 'rollup-plugin-uglify';
 
 const sharedOptions = {
   plugins: [
@@ -17,7 +18,13 @@ function createModuleExport(format, {
   outputFileName = './index.js'
 } = {}) {
   return {
-    ...sharedOptions,
+    external: ['react', 'styled-components'],
+    plugins: [
+      jsx({ factory: 'React.createElement' }),
+      resolve({ extensions: ['.js', '.jsx', '.json'] }),
+      babel(),
+      ...(format === 'cjs' ? [uglify()] : []),
+    ],
     input,
     output: {
       file: outputFileName,
