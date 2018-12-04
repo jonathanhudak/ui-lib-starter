@@ -9,7 +9,7 @@
     "precommit": "lint-staged && npm test",
     "test": "jest",
     "build": "rollup -c config.js",
-    "release": "npm run build && npm publish"
+    "release": "npm run build && np"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
@@ -49,6 +49,7 @@
     "jest": "^23.6.0",
     "jest-styled-components": "^6.3.1",
     "lint-staged": "^8.0.5",
+    "np": "^3.0.4",
     "prettier": "^1.15.2",
     "react-test-renderer": "^16.6.3",
     "rollup": "^0.67.3",
