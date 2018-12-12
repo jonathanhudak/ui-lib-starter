@@ -8,31 +8,37 @@ A boilerplate project to get up and running building a UI library using:
 - styled-components
 - storybook
 
-## Setup
+## UI Lib Development
 
 1. Clone repo: `git clone git@github.com:jonathanhudak/react-storybook-styled-components-gh-pages.git`
 2. `npm install`
 
-## Local Development
+### Local Development
 
 1. `npm start` will open up `http://localhost:9001/`
 2. build components
 
-## Deployment
+### Deployment
 
 1. Add your own git repo remote origin
-2. Run `npm run deploy-storybook`
+2. Run `npm run deploy`
 
-## Build
+### Build
 
-2. Run `npm run build`
+1. Run `npm run build`
 
-### Reference Links
+### Publish to NPM
+
+1. Login to npm `npm login`
+2. Run `npm run publish`
+
+## Reference Links
 
 - [react](http://reactjs.org/)
 - [storybook](https://storybook.js.org/basics/guide-react/)
 - [storybook-deployer](https://github.com/storybooks/storybook-deployer)
 - [styled-components](https://www.styled-components.com/)
+- [np](https://github.com/sindresorhus/np)
 
 ### Todo
 

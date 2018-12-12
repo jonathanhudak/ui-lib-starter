@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
-    "deploy": "storybook-to-ghpages",
     "precommit": "lint-staged && npm test",
     "test": "jest",
     "build": "rollup -c rollup.config.js",
-    "release": "npm run build && np"
+    "publish": "np",
+    "deploy": "storybook-to-ghpages",
+    "postpublish": "npm run deploy"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
