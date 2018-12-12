@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import { uglify } from 'rollup-plugin-uglify';
+import { mainFile, components } from './build-config.json';
 
 const options = {
   external: ['react', 'react-proptypes', 'styled-components'],
@@ -18,7 +19,7 @@ const options = {
 };
 
 export default [
-  ...['Button'].map(c => ({
+  ...components.map(c => ({
     ...options,
     input: `./src/components/${c}.js`,
     output: {
@@ -28,7 +29,7 @@ export default [
   })),
   {
     ...options,
-    input: './src/index.js',
+    input: mainFile,
     output: {
       file: 'index.js',
       format: 'cjs',
