@@ -8,7 +8,7 @@
     "precommit": "lint-staged && npm test",
     "test": "jest",
     "build": "rollup -c rollup.config.js",
-    "publish": "np",
+    "publish": "npm run build && np",
     "deploy": "storybook-to-ghpages",
     "postpublish": "npm run deploy"
   },
