@@ -8,7 +8,8 @@
     "test": "jest",
     "build": "rollup -c rollup.config.js",
     "publish": "npm run build && np",
-    "postpublish": "npm run deploy",
+    "predeploy:website": "rimraf dist && ROOT=/ui-lib-starter/ parcel build index.html --public-url ./ && cp ./dist/index.html ./dist/404.html",
+    "deploy:website": "gh-pages -d dist",
     "start": "parcel index.html"
   },
   "lint-staged": {
@@ -45,6 +46,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "gh-pages": "^2.1.1",
     "glob": "^7.1.4",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
@@ -54,6 +56,7 @@
     "prettier": "^1.18.2",
     "react-router-dom": "^5.1.2",
     "react-test-renderer": "^16.10.2",
+    "rimraf": "^3.0.0",
     "rollup": "^1.23.1",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.2.0",
